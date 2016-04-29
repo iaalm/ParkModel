@@ -36,7 +36,7 @@ def print_park_points(ax):
     pos = list(zip(*park_pos))
     ax.scatter(pos[0],pos[1])
 def print_line(ax,x,y):
-    ax.plot(*list(zip(*(park_pos[x][:2],park_pos[y][:2]))),linewidth=1)
+    ax.plot(*list(zip(*(park_pos[x][:2],park_pos[y][:2]))),linewidth=1,color='black')
 
 def print_park_lines(ax):
     for i in range(11):
